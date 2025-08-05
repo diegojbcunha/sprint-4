@@ -56,6 +56,14 @@ footer {
     padding: 10px 40px;
 }
 
+.legenda_foto1 {
+    font-size: 20px;
+    line-height: 1.5px;
+    color: #000;
+    margin: 20px 100px;
+    text-align: center;
+}
+
 .redes_sociais {
     display: flex;
     gap: 15px;
