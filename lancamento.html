@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/lancamento.css">
+    <link rel="stylesheet" href="css/lancamento.css">
 
     <link rel="icon" href="/img/icons8-ford-480.png" type="image/x-icon">
 
@@ -30,6 +30,7 @@
         <div></div>
     </header>
 
+
     <main>
         <section>
             <div class="video_promocional">
@@ -39,54 +40,53 @@
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div class="texto_promocional">
-                <p>Ford Ranger.</p>
-
-                <p>Robustez, Tecnologia e Novas Experiências Ford.
+                <p class="titulo_promocional">Ford Ranger.</p>
+                <p class="subtitulo_promocional">Robustez, Tecnologia e Novas Experiências Ford.
                     A revolução do segmento.</p>
             </div>
         </section>
 
-        <table class="tabela_carros">
-            <tr>
-                <td class="veiculo_card">
-                    <img src="/img/XL Cabine.jpg" alt="veiculo1" class="veiculo_imagem">
-                    <div class="veiculo_informacao">
-                        <input type="checkbox" class="veiculo_checkbox">
-                        <div class="texto_container">
-                            <h5>XL Cabine Simples 2.2 Diesel 4x4 MT 2022</h5>
-                            <p>Preço Sugerido R$ 183.850</p>
-                        </div>
-                        <img src="/img/info.png" alt="info_icon">
+        <div class="tabela_veiculos">
+            <div class="veiculos_cards">
+                <div class="veiculo_img" style="background-image: url('/img/XL Cabine.jpg')"></div>
+                <div class="veiculo_info">
+                    <h3 class="veiculo_titulo">XL Cabine Simples 2.2 Diesel 4x4 2022</h3>
+                    <p class="veiculo_preco">Preço Sugerido: R$ 183.850</p>
+                    <p class="veiculo_detalhes">Motor 2.2L Diesel, 4x4, Câmbio Manual</p>
+                    <div class="veiculo_comparar">
+                        <input type="checkbox" id="compare1">
+                        <img src="/img/info.png" alt="Mais informações" class="veiculo_info-icon">
                     </div>
-                </td>
-            </tr>
-            <tr>
-                <td class="veiculo_card">
-                    <img src="/img/xls 2.2 diesel.jpg" alt="veiculo2" class="veiculo_imagem">
-                    <div class="veiculo_informacao">
-                        <input type="checkbox" class="veiculo_checkbox">
-                        <div class="texto_container">
-                            <h5>XL 2.2 Diesel 4x4 At 2022</h5>
-                            <p>Preço Sugerido: R$ 220.690</p>
-                        </div>
-                        <img src="/img/info.png" alt="info_icon">
+                </div>
+            </div>
+
+            <div class="veiculos_cards">
+                <div class="veiculo_img" style="background-image: url('/img/xls 2.2 diesel.jpg')"></div>
+                <div class="veiculo_info">
+                    <h3 class="veiculo_titulo">XL 2.2 Diesel 4x4 At 2022</h3>
+                    <p class="veiculo_preco">Preço Sugerido: R$ 220.690</p>
+                    <p class="veiculo_detalhes">Motor 2.2L Diesel, 4x4, Câmbio Automático</p>
+                    <div class="veiculo_comparar">
+                        <input type="checkbox" id="compare2">
+                        <img src="/img/info.png" alt="Mais informações" class="veiculo_info-icon">
                     </div>
-                </td>
-            </tr>
-            <tr>
-                <td class="veiculo_card">
-                    <img src="/img/storm.jpg" alt="veiculo3" class="veiculo_imagem">
-                    <div class="veiculo_informacao">
-                        <input type="checkbox" class="veiculo_checkbox">
-                        <div class="texto_container">
-                            <h5>Storm 2.2 Diesel 4x4 MT 2022</h5>
-                            <p>Preço Sugerido R$ 183.850</p>
-                        </div>
-                        <img src="/img/info.png" alt="info_icon">
+                </div>
+            </div>
+
+            <div class="veiculos_cards">
+                <div class="veiculo_img" style="background-image: url('/img/storm.jpg')"></div>
+                <div class="veiculo_info">
+                    <h3 class="veiculo_titulo">Storm 2.2 Diesel 4x4 MT 2022</h3>
+                    <p class="veiculo_preco">Preço Sugerido: R$ 183.850</p>
+                    <p class="veiculo_detalhes">Motor 2.2L Diesel, 4x4, Câmbio Manual</p>
+                    <div class="veiculo_comparar">
+                        <input type="checkbox" id="compare3">
+                        <img src="/img/info.png" alt="Mais informações" class="veiculo_info-icon">
                     </div>
-                </td>
-            </tr>
-        </table>
+                </div>
+            </div>
+        </div>
+
         <button type="submit" class="submit_botao">
             <span>Comparar Carros</span>
         </button>
