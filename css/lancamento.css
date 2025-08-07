@@ -3,23 +3,24 @@
     padding-right: 28px;
 }
 
-.titulo_promocional{
+.titulo_promocional {
     font-size: 50px;
     line-height: 1.5;
-    color: #000;
+    color: #133A7C;
     margin: 20px 100px;
     text-align: center;
     padding: 10px;
 }
 
-.subtitulo_promocional{
+.subtitulo_promocional {
     font-size: 30px;
     line-height: 1.5;
-    color: #000;
+    color: #133A7C;
     margin: 20px 100px;
     text-align: center;
     padding: 10px;
 }
+
 .video_promocional {
     flex: 1;
     min-width: 0;
@@ -36,7 +37,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 30px;
     margin: 40px 0;
 }
@@ -50,11 +50,14 @@
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border: 1px solid #e0e0e0;
+    z-index: 1
 }
 
 .veiculos_cards:hover {
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
-    transform: scale(1.03);
+    box-shadow: 10px 15px 25px rgba(0, 0, 0, 0.15);
+    transform: scale(1.04);
+    z-index: 2;
+    position: relative
 }
 
 .veiculo_img {
@@ -79,7 +82,7 @@
 
 .veiculo_preco {
     font-size: 16px;
-    color: #000;
+    color: #133A7C;
     margin: 10px 0;
 }
 
@@ -108,4 +111,26 @@
 
 .veiculos_cards:hover .veiculo_img--hover {
     opacity: 0.2;
+}
+
+.submit_botao{
+    background-color: #133A7C;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 200px;
+}
+
+.submit_botao:hover{
+    background-color: #47A8E5;
+    color: #fff
 }

@@ -19,12 +19,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;
+    padding: 0 40px;
     border-bottom: 1px solid #ddd;
 }
 
 header img {
-    height: 120px;
+    height: 80px;
 }
 
 header nav ul {
@@ -59,9 +59,13 @@ footer {
 .legenda_foto1 {
     font-size: 30px;
     line-height: 1.5;
-    color: #000;
+    color: #133A7C;
     margin: 20px 100px;
     text-align: center;
+}
+
+.legenda_foto1 a {
+    font-size: 25px;
 }
 
 .redes_sociais {
@@ -87,4 +91,40 @@ footer {
     margin: 0;
     font-size: 14px;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    header nav ul {
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    footer {
+        flex-direction: row;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .redes_sociais p {
+        display: none;
+    }
+
+    .redes_sociais img,
+    .logo_footer img {
+        height: 25px;
+    }
+
+    .copyright p {
+        font-size: 8px;
+        line-height: 1.4;
+        max-width: 88%;
+        margin: 0 auto;
+    }
 }
